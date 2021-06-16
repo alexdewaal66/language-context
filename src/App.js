@@ -1,4 +1,4 @@
-import React, {createContext, useState} from 'react';
+import React, {createContext} from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -17,7 +17,7 @@ function App() {
 
     return (
         <LanguageContext.Provider
-            value= {{ language }}
+            value={{language}}
         >
             <Router>
                 <Header/>

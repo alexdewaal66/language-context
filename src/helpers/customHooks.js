@@ -1,13 +1,4 @@
-import {useState, useEffect} from "react";
-
-export function useConditionalEffect(operation, qualifier) {
-    function conditionalOperation() {
-        if (qualifier)
-            operation();
-    }
-
-    useEffect(conditionalOperation, [qualifier]);
-}
+import {useState} from "react";
 
 export function useCleanState(defaultValue) {
     const stateObj = {};
